@@ -1,0 +1,108 @@
+.navBarSection > .header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.logoDiv > .logo {
+    color: white;
+    font-weight: 500;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.icon{
+    font-size: 25px;
+    color: hsl(26, 93%, 50%);
+}
+
+@media screen and (max-width:768px) {
+    .navBar {
+        background-color: aliceblue;
+        top: 0;
+        left: -500%;
+        position: absolute;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+        transition: .5s ease;
+        z-index: 1000;
+        height: max-content;
+        width: 100%;
+    }
+
+    .navLists {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .navItem {
+        padding: 1rem 0;
+    }
+    .navLink {
+        color: gray;
+        font-size: .9rem;
+        font-weight: 600;
+        
+    }
+
+    .navLink:hover{
+        color: hsl(26, 93%, 50%);
+    }
+
+    .headerBtns {
+        flex-direction: column;
+    }
+    .headerBtns > .btn {
+        margin-top:1rem
+    }
+
+    .closeNavbar {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: hsl(26, 93%, 50%);
+        
+    }
+
+   .activeNavbar {
+    left:0
+   }
+    
+}
+
+@media screen and (min-width:769px) {
+    .toggleNavbar, .closeNavbar {
+        display: none;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .navLists {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navLink {
+        color: white;
+        padding: 0 1rem;
+
+    }
+
+    .loginBtn {
+        margin-right: .5rem;
+    }
+    
+
+    
+    
+}
